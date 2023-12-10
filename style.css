@@ -1,0 +1,207 @@
+ *{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+    background: #FE5F55;
+    color: #EEF5DB;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+  padding: 10px 10%;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo{
+  width: 140px;
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a{
+  color: #EEF5DB;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #FE5F55;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+  width: 100%;
+}
+
+.header-text{
+  margin-top: 15%;
+  font-size: 30px;
+}
+
+.header-text h1{
+  font-size: 80px;
+  margin-top: 15px;
+}
+
+/*--------whoami--------*/
+
+#who{
+  padding: 50px;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.who-col-1{
+  flex-basis: 35%;
+}
+
+.who-col-1 img{
+  align-items: center;
+  float: left; 
+  margin: 20px;
+  width: 100%;
+}
+
+.who-col-2{
+  flex-basis: 60%;
+}
+
+.sub-title{
+  font-size: 60px;
+  font-weight: 500px;
+}
+
+.paragraph{
+  text-align: justify;
+  padding: 20px;
+  font-size: 20px;
+}
+
+/*--------mywork--------*/
+
+#work{
+  padding: 50px;
+}
+.sub-title1{
+  padding: 150px 25px;
+  font-size: 60px;
+  font-weight: 500px;
+  margin-top: 15px;
+}
+
+.paragraph1{
+  margin-top: 15px;
+  padding: 150px;
+  font-size: 25px;
+}
+
+/*Code copied from: https://www.w3schools.com/howto/howto_css_images_side_by_side.asp 
+Author: w3schools.com
+Name: How to Align Images Side by Side
+Date retrieved: December 8, 2023*/
+
+/*Copied code starts*/
+
+.column{
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*Copied code ends*/
+
+/*--------reachme--------*/
+
+#connect{
+  padding: 50px;
+}
+
+.sub-title2{
+  padding: 25px;
+  font-size: 60px;
+  font-weight: 500px;
+}
+
+.paragraph2{
+  padding: 25px;
+  font-size: 25px;
+}
+
+/*Code copied from: https://www.w3schools.com/howto/howto_css_contact_form.asp
+Author: w3schools.com
+Name: How to Contact Form (CSS)
+Date retrieved: December 8, 2023*/
+
+/*Copied code starts*/
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px #282828; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #EEF5DB;
+  color: #282828;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #FE5F55;
+}
+
+/*Copied code ends*/
+
+
+
+
